@@ -1,0 +1,61 @@
+.game-container {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+}
+.game-container p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 25px;
+}
+.game-infos {
+  display: flex;
+  width: 100%;
+  background-color: aliceblue;
+}
+.game-infos p {
+  flex: 1;
+}
+.game-infos svg{
+  margin: 0 .5rem;
+}
+.game {
+  background-color: rgb(255, 255, 0);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.game-local,
+.game-info,
+.game-date {
+  border-bottom: 1px solid red;
+}
+.game-info{
+  text-transform: uppercase;
+}
+.left-infos,
+.center-infos,
+.right-infos {
+  flex: 1;
+  background-color: bisque;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.center-infos span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0 0.2rem;
+}
+.center-infos .penalty-goals {
+  font-size: 1.2rem;
+}
+.team img {
+  max-width: 45px;
+  margin: 0.3rem;
+}
+#matchStatus{
+  text-transform: lowercase;
+}
