@@ -2,19 +2,20 @@
     width: 100%;
     border-collapse: collapse;
   }
+  .table h2{
+    text-align: center;
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+  }
   
   .table th,
   .table td {
-    padding: 8px;
-    text-align: left;
+    padding: 0 .3rem;
     border-bottom: 1px solid #ddd;
-  }
-  
-  .white-row {
-    background-color: #fff;
-  }
-  
-  .gray-row {
-    background-color: #f2f2f2;
+    text-align: center;
+    min-width: 25px;
+  }  
+  .table td {
+    background-color: var(--card-color);
   }
   

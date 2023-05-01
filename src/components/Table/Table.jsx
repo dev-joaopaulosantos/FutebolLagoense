@@ -20,9 +20,9 @@ const Table = (props) => {
             </thead>
             <tbody>
                 {data.map((obj, index) => (
-                    <tr key={obj._id} className={index % 2 === 0 ? 'white-row' : 'gray-row'}>
+                    <tr key={obj._id}>
                         <td>{index + 1}</td>
-                        <td><img style={{width: "40px"}} src="https://cdn3.iconfinder.com/data/icons/trophy-and-awards/512/badge_champion_leadership-2-512.png" alt={obj.team.name} /></td>
+                        <td><img style={{width: "30px"}} src="https://cdn3.iconfinder.com/data/icons/trophy-and-awards/512/badge_champion_leadership-2-512.png" alt={obj.team.name} /></td>
                         <td>{obj.team.name}</td>
                         <td>{obj.points}</td>
                         <td>{obj.games}</td>

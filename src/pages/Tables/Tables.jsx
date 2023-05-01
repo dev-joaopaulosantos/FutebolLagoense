@@ -44,49 +44,49 @@ const Tables = () => {
       <div>
          {group1 && group1.length > 0 && (
             <div className="table">
-               <h2>Grupo 1</h2>
+               <h2>Grupo A</h2>
                <Table data={group1} />
             </div>
          )}
          {group2 && group2.length > 0 && (
             <div className="table">
-               <h2>Grupo 1</h2>
+               <h2>Grupo B</h2>
                <Table data={group2} />
             </div>
          )}
          {group3 && group3.length > 0 && (
             <div className="table">
-               <h2>Grupo 1</h2>
+               <h2>Grupo C</h2>
                <Table data={group3} />
             </div>
          )}
          {group4 && group4.length > 0 && (
             <div className="table">
-               <h2>Grupo 1</h2>
+               <h2>Grupo D</h2>
                <Table data={group4} />
             </div>
          )}
          {group5 && group5.length > 0 && (
             <div className="table">
-               <h2>Grupo 1</h2>
+               <h2>Grupo E</h2>
                <Table data={group5} />
             </div>
          )}
          {group6 && group6.length > 0 && (
             <div className="table">
-               <h2>Grupo 1</h2>
+               <h2>Grupo F</h2>
                <Table data={group6} />
             </div>
          )}
          {group7 && group7.length > 0 && (
             <div className="table">
-               <h2>Grupo 1</h2>
+               <h2>Grupo G</h2>
                <Table data={group7} />
             </div>
          )}
          {group8 && group8.length > 0 && (
             <div className="table">
-               <h2>Grupo 1</h2>
+               <h2>Grupo H</h2>
                <Table data={group8} />
             </div>
          )}

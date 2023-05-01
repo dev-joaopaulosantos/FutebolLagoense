@@ -1,20 +1,27 @@
 .sidebar{
-    background-color: rgba(0, 128, 0, 0.329);
+    background-color: var(--main-color);
     padding: 0 1rem;
     margin-right: 1.5rem;
-    min-width: 250px;
+    min-width: 280px;
+    height: 72vh;
+    /* position: fixed; */
     /* display: none; */
+}
+.sidebar h2{
+    padding: 1rem 0;
+    text-align: center;
 }
 .sidebar ul{
     list-style: none;
-    height: 63vh;
+    height: 60vh;
     overflow: auto;
 }
 .sidebar ul li{
-    padding: .4rem 0;
+    padding: .6rem 0 .6rem .3rem;
+    margin-right: .5rem;
+    cursor: pointer;
 }
 .selected {
-    border: 1px solid var(--dark-green);
-    border-radius: 10px;
-    background-color: #00533e17;
+    border-right: 2px solid var(--main-text-color);
+    background-color: hsla(0, 0%, 100%, 0.05);
 }

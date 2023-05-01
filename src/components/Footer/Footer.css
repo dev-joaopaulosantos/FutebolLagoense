@@ -3,5 +3,5 @@ footer{
     align-items: center;
     justify-content: center;
     height: 14vh;
-    background-color: aliceblue;
+    background-color: var(--card-color);
 }

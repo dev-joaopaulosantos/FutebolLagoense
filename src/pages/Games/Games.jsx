@@ -23,7 +23,7 @@ const Games = () => {
 
    return (
       <section className="game-container">
-         <h1>Games</h1>
+         <h1>Jogos</h1>
          {games && games.length > 0 && (
             games.map((game) => (
                <div key={game._id}>
