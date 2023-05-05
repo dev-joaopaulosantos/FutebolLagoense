@@ -4,12 +4,15 @@
     margin-right: 1.5rem;
     min-width: 280px;
     height: 72vh;
-    /* position: fixed; */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     /* display: none; */
 }
 .sidebar h2{
     padding: 1rem 0;
     text-align: center;
+    text-transform: uppercase;
 }
 .sidebar ul{
     list-style: none;
@@ -20,6 +23,9 @@
     padding: .6rem 0 .6rem .3rem;
     margin-right: .5rem;
     cursor: pointer;
+}
+.sidebar ul li:hover{
+    background-color: rgba(255, 255, 255, 0.05);
 }
 .selected {
     border-right: 2px solid var(--main-text-color);

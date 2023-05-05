@@ -25,6 +25,10 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
+  transition: .4s;
+}
+.game:hover{
+	opacity: 90%;
 }
 .game-local,
 .game-info,
@@ -45,6 +49,9 @@
   justify-content: space-between;
   padding: 0.1rem 0;
 }
+.center-infos {
+  padding-bottom: 1.5rem;
+}
 .center-infos span {
   font-size: 1.8rem;
   font-weight: bold;
@@ -56,8 +63,9 @@
 }
 .team img {
   max-width: 45px;
-  margin: 0.3rem;
+  margin-top: 2px;
+  padding: .2rem;
 }
 #matchStatus {
-  text-transform: lowercase;
+  text-transform: uppercase;
 }

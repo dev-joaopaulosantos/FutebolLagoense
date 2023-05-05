@@ -1,0 +1,13 @@
+.container-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.container-infos div p:first-child {
+  display: inline;
+  border-bottom: 2px solid var(--main-color);
+}
+.container-infos div p:last-child {
+  text-transform: uppercase;
+  padding: 0.3rem 0;
+}

@@ -1,21 +1,24 @@
 .table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  .table h2{
-    text-align: center;
-    margin: 1.5rem 0;
-    font-size: 1.5rem;
-  }
-  
-  .table th,
-  .table td {
-    padding: 0 .3rem;
-    border-bottom: 1px solid #ddd;
-    text-align: center;
-    min-width: 25px;
-  }  
-  .table td {
-    background-color: var(--card-color);
-  }
-  
+  width: 100%;
+  border-collapse: collapse;
+}
+.table h2 {
+  text-align: center;
+  margin: 1.5rem 0;
+  font-size: 1.5rem;
+}
+
+.table th,
+.table td {
+  padding: 0 0.3rem;
+  border-bottom: 1px solid var(--main-text-color);
+  text-align: center;
+  min-width: 25px;
+}
+.table td {
+  background-color: var(--card-color);
+}
+.table td img {
+  width: 30px;
+  padding: 0.2rem 0;
+}

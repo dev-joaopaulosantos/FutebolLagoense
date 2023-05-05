@@ -22,7 +22,7 @@ const Table = (props) => {
                 {data.map((obj, index) => (
                     <tr key={obj._id}>
                         <td>{index + 1}</td>
-                        <td><img style={{width: "30px"}} src="https://cdn3.iconfinder.com/data/icons/trophy-and-awards/512/badge_champion_leadership-2-512.png" alt={obj.team.name} /></td>
+                        <td><img src={obj.team.shield} alt={obj.team.name} /></td>
                         <td>{obj.team.name}</td>
                         <td>{obj.points}</td>
                         <td>{obj.games}</td>

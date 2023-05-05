@@ -17,8 +17,6 @@ const Sidebar = () => {
 
     }, [])
 
-    // console.log(selectedChampionship)
-
     return (
         <div className='sidebar'>
             <h2>Campeonatos</h2>
@@ -30,11 +28,17 @@ const Sidebar = () => {
                             onClick={() => handleSelectChampionship(championship)}
                             className={`${selectedChampionship && selectedChampionship._id === championship._id ? 'selected' : ''}`}
                         >
-                            {championship.name}
-                            {getYear(championship.year)}
+                            {championship.name} {getYear(championship.year)}
                         </li>
                     ))
                 )}
+                <li>Campeonato teste</li>
+                <li>Campeonato teste</li>
+                <li>Campeonato teste</li>
+                <li>Campeonato teste</li>
+                <li>Campeonato teste</li>
+                <li>Campeonato teste</li>
+                <li>Campeonato teste</li>
                 <li>Campeonato teste</li>
                 <li>Campeonato teste</li>
                 <li>Campeonato teste</li>
