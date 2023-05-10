@@ -23,7 +23,7 @@ const Table = (props) => {
                     <tr key={obj._id}>
                         <td>{index + 1}</td>
                         <td><img src={obj.team.shield} alt={obj.team.name} /></td>
-                        <td>{obj.team.name}</td>
+                        <td className='team-name'>{obj.team.name}</td>
                         <td>{obj.points}</td>
                         <td>{obj.games}</td>
                         <td>{obj.victories}</td>
