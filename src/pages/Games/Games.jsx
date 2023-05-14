@@ -41,7 +41,7 @@ const Games = () => {
                         </div>
                      </div>
                      <div className='center-infos'>
-                        <p id='matchStatus'>FIM</p>
+                        <p id='matchStatus'>{game.matchStatus}</p>
                         <div>
                            <span>{game.homeGoals}</span>
                            <span className='penalty-goals'>{game.penaltyGoalsHome}</span>

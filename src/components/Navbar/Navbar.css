@@ -1,6 +1,5 @@
 .navbar {
   width: 100%;
-  background-color: var(--main-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,18 +9,21 @@
   text-align: center;
   justify-content: space-between;
   width: 100%;
+  gap: .5rem;
 }
 .navbar nav a {
   width: inherit;
   padding: 0.5rem 0;
   text-decoration: none;
   text-transform: uppercase;
+  background-color: var(--main-color);
   color: var(--main-text-color);
+  border-radius: 10px;
 }
 .navbar nav a:hover {
-  background-color: rgba(255, 255, 255, 0.05);
+  opacity: 80%;
 }
 .active {
   border-bottom: 2px solid var(--main-text-color);
-  background-color: rgba(255, 255, 255, 0.05);
+  opacity: 80%;
 }

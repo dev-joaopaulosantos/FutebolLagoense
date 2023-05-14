@@ -32,6 +32,7 @@ const Sidebar = () => {
                         </li>
                     ))
                 )}
+                {/* <li>Campeonato teste</li>
                 <li>Campeonato teste</li>
                 <li>Campeonato teste</li>
                 <li>Campeonato teste</li>
@@ -55,8 +56,7 @@ const Sidebar = () => {
                 <li>Campeonato teste</li>
                 <li>Campeonato teste</li>
                 <li>Campeonato teste</li>
-                <li>Campeonato teste</li>
-                <li>Campeonato teste</li>
+                <li>Campeonato teste</li> */}
             </ul>
         </div>
     )

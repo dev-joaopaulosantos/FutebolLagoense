@@ -1,27 +1,31 @@
 .table {
   width: 100%;
   border-collapse: collapse;
+  background-color: var(--card-color);
+  border-radius: 10px;
 }
 .table h2 {
   text-align: center;
   margin: 1.5rem 0;
   font-size: 1.5rem;
+  padding: 1rem 0 .5rem 0;
 }
-
 .table th,
 .table td {
   padding: 0 0.3rem;
-  border-bottom: 1px solid var(--main-text-color);
   text-align: center;
   min-width: 25px;
 }
-.table td {
-  background-color: var(--card-color);
+.table tr, .table th{
+  border-bottom: 1px solid var(--main-text-color);
+}
+.table tr:last-child {
+  border: none;
 }
 .table td img {
   width: 30px;
   padding: 0.2rem 0;
 }
-.team-name{
+.team-name {
   max-width: 70px;
 }
