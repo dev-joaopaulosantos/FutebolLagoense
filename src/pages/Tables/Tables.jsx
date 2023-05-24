@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
+import './Tables.css'
 import api from '../../utils/api'
 import { useContext } from "react"
 import { ChampionshipContext } from "../../context/ChampionshipContext"
 import Table from '../../components/Table/Table'
+import Loading from '../../components/Loading/Loading'
 
 const Tables = () => {
    const [classifications, setclassifications] = useState([])
@@ -43,7 +45,7 @@ const Tables = () => {
 
 
    return (
-      <section>
+      <section className='tables-container'>
          {selectedChampionship && selectedChampionship.groupStage && (
             <div>
                {group1 && group1.length > 0 && (
@@ -100,6 +102,9 @@ const Tables = () => {
             <div className='information'>
                <h2>Este campeonato não possui tabala de classificação!</h2>
             </div>
+         )}
+         {classifications.length === 0 && (
+            <Loading />
          )}
       </section>
    );

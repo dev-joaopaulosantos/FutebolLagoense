@@ -13,7 +13,10 @@ const Header = () => {
       {selectedChampionship.image && (
         <img src={selectedChampionship.image} alt={selectedChampionship.name} />
       )}
-      <h1>{selectedChampionship.name} {getYear(selectedChampionship.year)}</h1>
+      {selectedChampionship && (
+        <h1>{selectedChampionship.name} {getYear(selectedChampionship.year) || '...'}</h1>
+      )}
+
     </header>
   )
 }

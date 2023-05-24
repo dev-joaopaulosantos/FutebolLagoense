@@ -7,9 +7,10 @@ import { MdCalendarMonth } from 'react-icons/md'
 
 import { useContext } from "react"
 import { ChampionshipContext } from "../../context/ChampionshipContext"
+import Loading from "../../components/Loading/Loading"
 
 const Games = () => {
-   const [games, setGames] = useState([])
+   const [games, setGames] = useState()
    const { selectedChampionship } = useContext(ChampionshipContext)
 
    useEffect(() => {
@@ -65,6 +66,9 @@ const Games = () => {
             <div className="information">
                <h2>Ainda não há jogos cadastrados no campeonato selecionado!</h2>
             </div>
+         )}
+         {!games && (
+            <Loading />
          )}
       </section>
    )

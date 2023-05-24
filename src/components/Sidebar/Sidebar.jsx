@@ -5,9 +5,10 @@ import './Sidebar.css'
 
 import { useContext } from 'react'
 import { ChampionshipContext } from '../../context/ChampionshipContext'
+import Loading from '../Loading/Loading'
 
 const Sidebar = () => {
-    const [championships, setChampionships] = useState([])
+    const [championships, setChampionships] = useState()
     const { selectedChampionship, handleSelectChampionship } = useContext(ChampionshipContext)
 
     useEffect(() => {
@@ -32,31 +33,6 @@ const Sidebar = () => {
                         </li>
                     ))
                 )}
-                {/* <li>Campeonato teste</li>
-                <li>Campeonato teste</li>
-                <li>Campeonato teste</li>
-                <li>Campeonato teste</li>
-                <li>Campeonato teste</li>
-                <li>Campeonato teste</li>
-                <li>Campeonato teste</li>
-                <li>Campeonato teste</li>
-                <li>Campeonato teste</li>
-                <li>Campeonato teste</li>
-                <li>Campeonato teste</li>
-                <li>Campeonato teste</li>
-                <li>Campeonato teste</li>
-                <li>Campeonato teste</li>
-                <li>Campeonato teste</li>
-                <li>Campeonato teste</li>
-                <li>Campeonato teste</li>
-                <li>Campeonato teste</li>
-                <li>Campeonato teste</li>
-                <li>Campeonato teste</li>
-                <li>Campeonato teste</li>
-                <li>Campeonato teste</li>
-                <li>Campeonato teste</li>
-                <li>Campeonato teste</li>
-                <li>Campeonato teste</li> */}
             </ul>
         </div>
     )
